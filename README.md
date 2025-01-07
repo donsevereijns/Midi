@@ -16,7 +16,7 @@ sudo apt-get upgrade
 </li>
 </ul>
 <h2>Audio</h2>
-Prioritize audio
+Give the audio-group the rights to set real-time priorities
 <ul>
 <li><code>sudo user mod -a -G audio pi</code> </li>
 <li>Check that there are 2 lines in <code>/etc/security/limits.d/audio.conf</code>:
