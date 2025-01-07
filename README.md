@@ -15,7 +15,17 @@ sudo apt-get upgrade
 </pre>
 </li>
 </ul>
-<h1>Raspberry PI microSD and OS</h1>
+<h2>Audio</h2>
+Prioritize audio
+<ul>
+<li><code>sudo user mod -a -G audio pi</code> </li>
+<li>Check that there are 2 lines in <code>/etc/security/limits.d/audio.conf</code>:
+<pre>
+@audio - rtprio 80
+@audio - memlock unlimited
+</pre>  
+</li>
+</ul>
 
 <h2>References</h2>
 <ul>
