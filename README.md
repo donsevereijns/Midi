@@ -9,10 +9,10 @@ First I run a simple PoC to check the latency of response to pressing keys on th
   <li>Add the wpa_supplicant.config to the boot partition.</li>
   <li>Boot the RPI with the new image. Use the Fink app to SSH into the RPI. Login with UID pi, pswd raspberry.</li>
   <li>Update the RPI
-    <code>
+  <code>
     sudo apt-get update
     sudo apt-get upgrade
-    </code>
+  </code>
   </li>
 </ul>
 <h1>Raspberry PI microSD and OS</h1>
