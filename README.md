@@ -28,7 +28,7 @@ defaults.ctl.card <x>
 defaults.pcm.card <y>
 </pre></li>
 <li>Check that the usb speakers can be volume controlled in <code>alsamixer</code>.</li>
-<li>Run <code>speaker-test -c2 -twav</code>. Use <code>ctrl-z</code> to stop.</li>
+<li>Test sound. In my case by running a predefined wav, 2 channels: <code>speaker-test -c 2 -t wav</code>. Use <code>ctrl-z</code> to stop.</li>
 </ul>
 Maybe a reboot is needed if not working immediately.
 <h2>Fluidsynth</h2>
