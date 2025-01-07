@@ -12,10 +12,9 @@ First I run a simple PoC to check if the latency of response to pressing keys on
 <li>Update the RPI: <code>sudo apt-get update</code> and <code>sudo apt-get upgrade</code></li>
 </ul>
 <h2>Audio</h2>
-Give the audio-group the rights to set real-time priorities
 <ul>
-<li><code>sudo user mod -a -G audio pi</code> </li>
-<li>Check that there are 2 lines in <code>/etc/security/limits.d/audio.conf</code>:
+<li>Add the pi user to a supplemental audio group: <code>sudo usermod -a -G audio pi</code> </li>
+<li>Give the audio group the rights to set real-time priorities: check that there are 2 lines in <code>/etc/security/limits.d/audio.conf</code>:
 <pre>
 @audio - rtprio 80
 @audio - memlock unlimited
