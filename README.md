@@ -23,9 +23,16 @@ Give the audio-group the rights to set real-time priorities
 <pre>
 @audio - rtprio 80
 @audio - memlock unlimited
-</pre>
-So when using the <code>top</code> cmd, audio processes should show 'rt' in the PR (prio) column.
+</pre>So when using the <code>top</code> cmd, audio processes should show 'rt' in the PR (prio) column.
 </li>
+<li>Connect usb speakers to the RPI and activate them.</li>
+<li>Find the card no of the usb speakers via <code>aplay -l</code>. This belongs to the physical port chosen for the usb speakers (NB!).</li>
+<li>Make sure that the lines in <code>/usr/share/alsa/alsa.conf</code> refer to that card no:
+<pre>
+defaults.ctl.card <x>
+defaults.pcm.card <y>
+</pre></li>
+<li>Check that the usb speakers can be volume controlled in <code>alsamixer</code>.</li>
 </ul>
 
 <h2>References</h2>
