@@ -1,7 +1,7 @@
 # Midi
 I store my configurations during a journey to explore Midi in this repository.
 
-<h1>Digital sound module</h1>
+<h1>RPI as sound module</h1>
 This first step is to add a Raspberry PI as synthesizer between my midi keyboard and usb speakers, to make it sound like a piano, without extra digital step such as a DAW or analog step such as a soundcard or audio interface in between.
 <h2>Raspberry PI microSD and OS</h2>
 First I run a simple PoC to check if the latency of response to pressing keys on the midi keyboard can be managed via realtime scheduling. If this appears too slow I will need to install a linux low-latency kernel, and perform associated remediations. But since I plan to use digital audio out, I am hopeful that a simplified install be sufficient.
