@@ -4,7 +4,8 @@ I store my configurations during a journey to explore Midi in this repository.
 <h1>RPI as sound module</h1>
 This first step is to add a Raspberry PI as synthesizer between my midi keyboard and usb speakers, to make it sound like a piano, without extra digital step such as a DAW or analog step such as a soundcard or audio interface in between.
 <h2>Raspberry PI microSD and OS</h2>
-First I run a simple PoC to check if the latency of response to pressing keys on the midi keyboard can be managed via realtime scheduling. If this appears too slow I will need to install a linux low-latency kernel, and perform associated remediations. But since I plan to use digital audio out, I am hopeful that a simplified install be sufficient.
+First I run a simple PoC to check if the latency of response to pressing keys on the midi keyboard can be managed via realtime scheduling. If this appears too slow I will need to install a linux low-latency kernel, and perform associated remediations. 
+As I plan to use digital audio out, the USB interface will add latency, so this will be important.
 <ul>
 <li>Image de microSD card, using Raspberry PI Imager and the Raspberry PI OS Lite image, bootable and SSH enabled.</li>
 <li>Add <code>rpi/wpa_supplicant.config</code> to the boot partition.</li>
@@ -38,6 +39,8 @@ Fluidsynth is an open source synthesizer. It is designed to load a soundfont. A 
 <pre>
 sudo apt-get install fluidsynth
 </pre>
+</li>
+<li>Now when running fluidsynth as <code>fluidsynth -a alsa -g 5 /usr/share/sounds/sf2/FluidR3_GM.sf2</code> I get several warnings, the first of which is fluidsynth: warning: Requested a period size of 64, got 940 instead</li>
 </li>
 <li>Create fluidsynth.sh as included in [this repository](https://github.com/GeordieTomo/Fluidsynth/blob/master/fluidsynth.sh), and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
 <li>Create a <code>keyboard</code> file in the <code>inst/</code> directory holding the soundfonts of my liking.</li>
