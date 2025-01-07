@@ -40,8 +40,9 @@ Fluidsynth is an open source synthesizer. It is designed to load a soundfont. A 
 sudo apt-get install fluidsynth
 </pre>
 </li>
-<li>Now when running fluidsynth as <code>fluidsynth -a alsa -g 5 /usr/share/sounds/sf2/FluidR3_GM.sf2</code> I get several warnings, the first of which is fluidsynth: warning: Requested a period size of 64, got 940 instead</li>
+<li>Now when running fluidsynth as <code>fluidsynth -a alsa -g 5 /usr/share/sounds/sf2/FluidR3_GM.sf2</code> I get two warnings, the first of which is fluidsynth: warning: Requested a period size of 64, got 940 instead</li>
 </li>
+<li>The second warning is <code>fluidsynth: warning: Failed to set thread to high priority</code></li>
 </ul>
 <!--
 <li>Create fluidsynth.sh as included in [this repository](https://github.com/GeordieTomo/Fluidsynth/blob/master/fluidsynth.sh), and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
