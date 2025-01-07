@@ -35,7 +35,15 @@ defaults.pcm.card <y>
 <li>Check that the usb speakers can be volume controlled in <code>alsamixer</code>.</li>
 <li>Run <code>speaker-test -c2 -twav</code>. Use <code>ctrl-z</code> to stop.</li>
 </ul>
-
+Maybe a reboot is needed if not working immediately.
+<h2>Fluidsynth</h2>
+<ul>
+<li>Install Fluidsynth
+<pre>
+sudo apt-get install fluidsynth
+</pre>
+</li><li>Create fluidsynth.sh as included in this repository, and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
+</ul>
 <h2>References</h2>
 <ul>
   <li>Raspberry instructions for configuring: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md  </li>
