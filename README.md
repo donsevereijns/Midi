@@ -9,12 +9,7 @@ First I run a simple PoC to check if the latency of response to pressing keys on
 <li>Image de microSD card, using Raspberry PI Imager and the Raspberry PI OS Lite image, bootable and SSH enabled.</li>
 <li>Add <code>rpi/wpa_supplicant.config</code> to the boot partition.</li>
 <li>Boot the RPI with the new image. Use the Fink app to SSH into the RPI. Login with UID pi, pswd raspberry.</li>
-<li>Update the RPI
-<pre>
-sudo apt-get update
-sudo apt-get upgrade
-</pre>
-</li>
+<li>Update the RPI: <code>sudo apt-get update</code> and <code>sudo apt-get upgrade</code></li>
 </ul>
 <h2>Audio</h2>
 Give the audio-group the rights to set real-time priorities
