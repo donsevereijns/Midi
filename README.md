@@ -43,7 +43,7 @@ Maybe a reboot is needed if not working immediately.
 sudo apt-get install fluidsynth
 </pre>
 </li>
-<li>Create fluidsynth.sh as included in this repository, and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
+<li>Create fluidsynth.sh as included in [this repository](https://github.com/GeordieTomo/Fluidsynth/blob/master/fluidsynth.sh), and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
 <li>Create a <code>keyboard</code> file in the <code>inst/</code> directory holding the soundfonts of my liking.</li>
 <li>Run <code>./fluidsynth.sh</code> to test that midi keyboard presses result in events shown in the cli and heared on the usb speakers.</li>
 </ul>
