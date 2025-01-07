@@ -33,6 +33,7 @@ defaults.pcm.card <y>
 </ul>
 Maybe a reboot is needed if not working immediately.
 <h2>Fluidsynth</h2>
+Fluidsynth is an open source synthesizer. It is designed to load a soundfont. A soundfont is a package of soundfiles, with for each midi key audio files belonging to the press of a key (attack and decay), holding a key (sustain) and releasing it (release). A soundfont may be associated with a certain instrument, e.g. a Steinway grand piano. The legality of soundfonts depends on how the audio samples were obtained. 
 <ul>
 <li>Install Fluidsynth
 <pre>
