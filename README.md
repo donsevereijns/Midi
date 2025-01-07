@@ -55,7 +55,7 @@ sudo apt-get install fluidsynth
 </ul>
 <h2>Autologin</h2>
 <ul>
-<li>Run <code>sudo raspi-config</code> and select the "Console Autlogin" boot option, under "Desktop/CLI".</li>
+<li>Run <code>sudo raspi-config</code> and select the "Console Autologin" boot option, under "Desktop/CLI".</li>
 <li>Reboot. The RPI should run headless now, without the need to SSH into it again.</li>
 </ul>
 <h2>References</h2>
