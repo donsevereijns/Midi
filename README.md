@@ -3,7 +3,7 @@ I store my configurations during a journey to explore Midi in this repository.
 
 <h1>Piano synthesizer for midi keyboard</h1>
 <h2>Raspberry PI microSD and OS</h2>
-First I run a simple PoC to check the latency of response to pressing keys on the midi keyboard. If this is too slow I will need to install a linux low-latency kernel, and associated remediations. But since I plan to use digital audio out, I am hopeful that a user-level install will be sufficient.
+First I run a simple PoC to check if the latency of response to pressing keys on the midi keyboard can be managed via realtime scheduling. If this appears too slow I will need to install a linux low-latency kernel, and perform associated remediations. But since I plan to use digital audio out, I am hopeful that a simplified install be sufficient.
 <ul>
 <li>Image de microSD card, using Raspberry PI Imager and the Raspberry PI OS Lite image, bootable and SSH enabled.</li>
 <li>Add <code>rpi/wpa_supplicant.config</code> to the boot partition.</li>
@@ -23,7 +23,8 @@ Give the audio-group the rights to set real-time priorities
 <pre>
 @audio - rtprio 80
 @audio - memlock unlimited
-</pre>  
+</pre>
+So when using the <code>top</code> cmd the audio process should show 'rt' in the PR (prio) column.
 </li>
 </ul>
 
