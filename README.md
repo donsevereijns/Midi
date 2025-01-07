@@ -24,7 +24,7 @@ Give the audio-group the rights to set real-time priorities
 @audio - rtprio 80
 @audio - memlock unlimited
 </pre>
-So when using the <code>top</code> cmd the audio process should show 'rt' in the PR (prio) column.
+So when using the <code>top</code> cmd, audio processes should show 'rt' in the PR (prio) column.
 </li>
 </ul>
 
