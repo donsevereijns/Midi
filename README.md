@@ -33,6 +33,7 @@ defaults.ctl.card <x>
 defaults.pcm.card <y>
 </pre></li>
 <li>Check that the usb speakers can be volume controlled in <code>alsamixer</code>.</li>
+<li>Run <code>speaker-test -c2 -twav</code>. Use <code>ctrl-z</code> to stop.</li>
 </ul>
 
 <h2>References</h2>
