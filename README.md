@@ -63,5 +63,6 @@ sudo apt-get install fluidsynth
 <h2>References</h2>
 <ul>
 <li>Raspberry instructions for configuring: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md  </li>
+<li>Well explained https://jereme.me/post/raspberry-pi-midi-sound-module/</li>
 </ul>
 -->
