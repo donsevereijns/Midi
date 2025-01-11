@@ -4,26 +4,7 @@ I store my configurations during a journey to explore Midi in this repository.
 <h1>RPI as sound module</h1>
 This first step is to add a Raspberry PI as synthesizer between my midi keyboard and usb speakers, to make it sound like a piano, without extra digital step such as a DAW or analog step such as a soundcard or audio interface in between.
 
-<h2>Audio</h2>
-<ul>
-<li>Add the pi user to a supplemental audio group: <code>sudo usermod -a -G audio pi</code> </li>
-<li>Give the audio group the rights to set real-time priorities: check that there are 2 lines in <code>/etc/security/limits.d/audio.conf</code>:
-<pre>
-@audio - rtprio 80
-@audio - memlock unlimited
-</pre>So when using the <code>top</code> cmd, audio processes should show 'rt' in the PR (prio) column.
-</li>
-<li>Connect usb speakers to the RPI and activate them.</li>
-<li>Find the card no of the usb speakers via <code>aplay -l</code>. This belongs to the physical port chosen for the usb speakers (NB!).</li>
-<li>Make sure that the lines in <code>/usr/share/alsa/alsa.conf</code> refer to that card no:
-<pre>
-defaults.ctl.card <x>
-defaults.pcm.card <y>
-</pre></li>
-<li>Check that the usb speakers can be volume controlled in <code>alsamixer</code>.</li>
-<li>Test sound. In my case by running a predefined wav, 2 channels: <code>speaker-test -c 2 -t wav</code>. Use <code>ctrl-z</code> to stop.</li>
-</ul>
-Maybe a reboot is needed if not working immediately.
+
 <h2>Fluidsynth</h2>
 Fluidsynth is an open source synthesizer. It is designed to load a soundfont. A soundfont is a package of soundfiles, with for each midi key audio files belonging to the press of a key (attack and decay), holding a key (sustain) and releasing it (release). A soundfont may be associated with a certain instrument, e.g. a Steinway grand piano. The legality of soundfonts depends on how the audio samples were obtained. 
 <ul>
