@@ -5,18 +5,7 @@ I store my configurations during a journey to explore Midi in this repository.
 This first step is to add a Raspberry PI as synthesizer between my midi keyboard and usb speakers, to make it sound like a piano, without extra digital step such as a DAW or analog step such as a soundcard or audio interface in between.
 
 
-<h2>Fluidsynth</h2>
-Fluidsynth is an open source synthesizer. It is designed to load a soundfont. A soundfont is a package of soundfiles, with for each midi key audio files belonging to the press of a key (attack and decay), holding a key (sustain) and releasing it (release). A soundfont may be associated with a certain instrument, e.g. a Steinway grand piano. The legality of soundfonts depends on how the audio samples were obtained. 
-<ul>
-<li>Install Fluidsynth
-<pre>
-sudo apt-get install fluidsynth
-</pre>
-</li>
-<li>Now when running fluidsynth as <code>fluidsynth -a alsa -g 5 /usr/share/sounds/sf2/FluidR3_GM.sf2</code> I get two warnings, the first of which is fluidsynth: warning: Requested a period size of 64, got 940 instead</li>
-</li>
-<li>The second warning is <code>fluidsynth: warning: Failed to set thread to high priority</code></li>
-</ul>
+
 <!--
 <li>Create fluidsynth.sh as included in [this repository](https://github.com/GeordieTomo/Fluidsynth/blob/master/fluidsynth.sh), and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
 <li>Create a <code>keyboard</code> file in the <code>inst/</code> directory holding the soundfonts of my liking.</li>
