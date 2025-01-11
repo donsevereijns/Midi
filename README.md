@@ -1,4 +1,4 @@
-# Midi
+# MIDI
 I keep track of my MIDI explorations in this repository.
 
 <h1>RPI as sound module</h1>
