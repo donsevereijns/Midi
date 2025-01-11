@@ -6,10 +6,10 @@ sudo apt-get install fluidsynth
 fluidsynth -a alsa -g 5 /usr/share/sounds/sf2/FluidR3_GM.sf2
 </pre>
 Warnings concern latency:
-<sl>
+<ol>
 <li>warning: Requested a period size of 64, got 940 instead</li>
 <li>warning: Failed to set thread to high priority</li>
-</sl>
+</ul>ol>
 </li>
 <li>Create a system wide configuration file to allow starting Fluidsynth without preamble messages (<code>sudo nano /etc/conf.d/fluidsynth</code>) with content:
 <pre>
