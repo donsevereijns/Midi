@@ -1,6 +1,6 @@
 <h2>Connect the MIDI keyboard to the SW synthesizer</h1>
 <ol>
-<li><code>aconnect -o</code> shows the devices involved. In my case:
+<li>Running <code>aconnect -o</code> shows the devices involved.<br>In my case:
 <pre>
   $ aconnect -o
 client 14: 'Midi Through' [type=kernel]
