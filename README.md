@@ -17,6 +17,8 @@ To check the latency of response to pressing keys on the midi keyboard, without 
 <h2>Step 2: Latency remediations</h1>
 I need to define a practical auditive latency target. The sound speed in air gives a 3 ms delay for a meter distance (which would be what feels natural if you play a piano or electric guitar). Furthermore a brain decides a 20 to 30 ms delay as separate. Let's then make a 10 ms delay the target.
 
+The following wiki suggests < 10 ms is achievable on Raspbian: https://wiki.linuxaudio.org/wiki/raspberrypi, so this project is still alive.
+
 <!--
 <li>Create fluidsynth.sh as included in [this repository](https://github.com/GeordieTomo/Fluidsynth/blob/master/fluidsynth.sh), and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
 <li>Create a <code>keyboard</code> file in the <code>inst/</code> directory holding the soundfonts of my liking.</li>
