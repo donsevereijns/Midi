@@ -12,10 +12,10 @@ To check the latency of response to pressing keys on the midi keyboard, without 
 <li>Run a Fluidsynth service (see Fluidsynth.md)</li>
 <li>Configure the MIDI device (see MIDI.md)</li>
 </ol>
-<br>This results with a RPI 3 B+ and Lite OS in a subsecond latency (estimated 0.4 s), which makes it a useless configuration.
+<br>This results with a RPI 3 B+ and Lite OS in a subsecond latency (I estimate it around 0.4 s), which makes it a useless configuration.
 
 <h2>Step 2: Latency remediations</h1>
-I need to define a practical auditive latency target. Would 20 ms suffice?
+I need to define a practical auditive latency target. The sound speed in air gives a 3 ms delay for a meter distance (which would be what feels natural if you play a piano or electric guitar). Furthermore a brain decides a 20 to 30 ms delay as separate. Let's then make a 10 ms delay the target.
 
 <!--
 <li>Create fluidsynth.sh as included in [this repository](https://github.com/GeordieTomo/Fluidsynth/blob/master/fluidsynth.sh), and run <code>sudo chmod +x fluidsynth.sh</code> to make it executable</li>
