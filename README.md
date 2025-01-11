@@ -1,8 +1,18 @@
 # Midi
-I store my configurations during a journey to explore Midi in this repository.
+I keep track of my MIDI explorations in this repository.
 
 <h1>RPI as sound module</h1>
-This first step is to add a Raspberry PI as synthesizer between my midi keyboard and usb speakers, to make it sound like a piano, without extra digital step such as a DAW or analog step such as a soundcard or audio interface in between.
+First I want to add (hopefully) a Raspberry PI as synthesizer between my midi keyboard and usb speakers, to make it sound like a piano, without extra digital step such as a DAW or analog step such as a soundcard or audio interface in between.
+
+<h2>Step 1: Fluidsynth PoC</h1>
+To check the latency of response to pressing keys on the midi keyboard, without optimization. 
+<ol>
+<li>Set up a Raspberry PI OS on microSD (see RPI.md)</li>
+<li>(Optional) Changing Raspbian audio defaults to use USB-speakers instead of a headset (see Audio.md)</li>
+<li>Run a Fluidsynth service (see Fluidsynth.md)</li>
+<li>Configure the MIDI device (see MIDI.md)</li>
+</ol>
+This results with a RPI 3 B+ and Lite OS in a subsecond latency (estimated 0.4 s), which makes it a useless configuration.
 
 
 
