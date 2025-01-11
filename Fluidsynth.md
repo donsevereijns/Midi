@@ -9,7 +9,7 @@ Warnings concern latency:
 <ol>
 <li>warning: Requested a period size of 64, got 940 instead</li>
 <li>warning: Failed to set thread to high priority</li>
-</ul>ol>
+</ol>
 </li>
 <li>Create a system wide configuration file to allow starting Fluidsynth without preamble messages (<code>sudo nano /etc/conf.d/fluidsynth</code>) with content:
 <pre>
